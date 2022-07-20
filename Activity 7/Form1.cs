@@ -27,19 +27,24 @@ namespace Activity_7
 
             for (int i = 1; i <= iter; i++)
             {
+                //use if-else statement to do switches between adding and subtracting
                 if (i == 1)
                 {
+                    //if first iteration, no addition or subtraction
                     piApprox = VAL / odd;
                 }
                 else if (i % 2 == 0)
                 {
+                    //if even iteration, subtract from value
                     piApprox -= VAL / odd;
                 }
                 else
                 {
+                    //if odd iteration, add to value
                     piApprox += VAL / odd;
                 }
 
+                //increase value to divide by two every iteration
                 odd += 2;
                 
             }
